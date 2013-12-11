@@ -22,7 +22,7 @@
 						<configuration>
 							<source>
 								<repository>
-									<url>${repo.source.url}</url>
+									<url>${project.baseUri}/staging/burnnat/sassedit</url>
 									<layout>p2</layout>
 								</repository>
 							</source>
