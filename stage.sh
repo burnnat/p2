@@ -4,6 +4,7 @@ STAGING_DIR="${PROJECT_DIR}/staging/${TRAVIS_REPO_SLUG}"
 
 git config credential.helper "store --file=.git/credentials"
 echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
+git remote add origin https://github.com/burnnat/p2
 
 cd $PROJECT_DIR
 if [ -e $STAGING_DIR ]
