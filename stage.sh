@@ -6,8 +6,7 @@ SOURCE_DIR="${TRAVIS_BUILD_DIR}/$1"
 cd $PROJECT_DIR
 
 git config user.name "Travis Build"
-git config credential.helper "store --file=.git/credentials"
-echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
+git config user.email "travis@travis-ci.org"
 
 if [ -e $STAGING_DIR ]
 then
