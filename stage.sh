@@ -14,7 +14,7 @@ then
 fi
 
 mkdir -p "${STAGING_DIR}"
-cp -r "${SOURCE_DIR}" "${STAGING_DIR}"
+cp -r "${SOURCE_DIR}/*" "${STAGING_DIR}"
 git add "${STAGING_DIR}"
 
 git commit -m "Add artifacts from ${TRAVIS_REPO_SLUG} build ${TRAVIS_BUILD_ID}"
