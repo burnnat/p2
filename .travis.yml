@@ -1,0 +1,9 @@
+language: java
+install: true
+script: mvn -e install
+deploy:
+  provider: heroku
+  app: p2-burnnat
+  api_key:
+    secure: MPsdXlqbqn0aP63VqjruomseLm6RZ/ADR5UgZGCZtyS/pnULlMFVKhZxF6WPorKP8Z/PgVQzv3IlWaVeeC2yG1XQ4rM+HYglJW4kaYCj2i2KN8K8r82gij8LUhkbPBcmTaVLAIy9nmnywBqUOLK3DECc4RCW1NCf+/FsO/OZgd0=
+  skip_cleanup: true
