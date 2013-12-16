@@ -3,6 +3,7 @@ install: true
 script: mvn -e install
 deploy:
   provider: heroku
+  buildpack: ruby
   app: p2-burnnat
   skip_cleanup: true
   api_key:
